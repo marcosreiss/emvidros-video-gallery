@@ -19,12 +19,16 @@ function renderVideos(videos) {
     videoList.innerHTML = "";
 
     videos.forEach((video, index) => {
+        const truncatedTitle = video.name.length > 70 ? video.name.substring(0, 70) + "..." : video.name;
+
         const videoItem = document.createElement("div");
         videoItem.classList.add("video-item");
+        videoItem.setAttribute("data-title", truncatedTitle); // Define o título para o hover
+
         videoItem.innerHTML = `
             <img src="https://img.youtube.com/vi/${video.iframe.split("/embed/")[1].split("?")[0]}/0.jpg" alt="${video.name}">
-            <span>${video.name}</span>
         `;
+
         videoItem.onclick = () => playVideo(video.iframe);
         videoList.appendChild(videoItem);
     });
