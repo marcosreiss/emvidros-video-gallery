@@ -13,7 +13,7 @@
 
 /* Layout Principal */
 body {
-    background-color: transparent;
+    background-color: #242625;
     color: white;
     padding: 20px;
 }
@@ -39,7 +39,7 @@ body {
     color: white;
     padding: 20px 50px;
     border-bottom: 1px solid white;
-    width: 48%;
+    width: 770px;
     background-image: url("assets/search_icon.png");
     background-size: 24px;
     background-repeat: no-repeat;
@@ -58,14 +58,14 @@ body {
     background: transparent;
     color: white;
     padding: 10px;
-    width: 48%;
+    width: 255px;
     font-size: 20px;
     font-weight: 200;
     border-bottom: 1px solid white;
     padding: 20px 10px;
 }
 .search-bar select option{
-    background-color: #1e1e1e;
+    background-color: #242625;
     font-weight: 200;
     border-radius: none;
 }
