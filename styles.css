@@ -13,7 +13,7 @@
 
 /* Layout Principal */
 body {
-    background-color: #1e1e1e;
+    background-color: transparent;
     color: white;
     padding: 20px;
 }
@@ -100,13 +100,29 @@ body {
     overflow-y: auto;
     overflow-x: hidden;
 }
+/* Aplica a personalização apenas no elemento específico */
+.video-list::-webkit-scrollbar {
+    width: 8px; /* Largura da scrollbar */
+}
+
+.video-list::-webkit-scrollbar-thumb {
+    background-color: #00ae9c; /* Cor da barra de rolagem */
+    border-radius: 4px; /* Bordas arredondadas */
+}
+
+.video-list::-webkit-scrollbar-track {
+    background: transparent; /* Cor do fundo da scrollbar */
+}
+.video-list {
+    scrollbar-color: #00ae9c transparent; /* Cor do thumb e do fundo */
+    scrollbar-width: thin; /* Scrollbar mais fina */
+}
 
 /* Itens da lista de vídeos */
 .video-item {
     position: relative;
     width: 100%;
     cursor: pointer;
-    border-radius: 5px;
     max-height: 150px;
 }
 
